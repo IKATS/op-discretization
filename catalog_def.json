@@ -9,7 +9,7 @@
     "name": "Discretize",
     "description": "Discretize regular buckets from time series of a dataset",
     "algorithm": "Discretize",
-    "entry_point": "ikats.algo.core.discretization::discretize_dataset",
+    "entry_point": "op-discretization::discretize_dataset",
     "label": "Discretize",
     "inputs": [
       {
