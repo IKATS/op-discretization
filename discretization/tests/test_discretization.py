@@ -21,12 +21,12 @@ import time
 import numpy as np
 import mock
 
-from ikats.algo.op-discretization import discretize_dataset
+from ikats.algo.discretization import discretize_dataset
 from ikats.core.resource.api import IkatsApi
 from ikats.core.resource.client.temporal_data_mgr import DTYPE
 from ikats.core.library.exception import IkatsException, IkatsNotFoundError
 
-LOGGER = logging.getLogger("ikats.algo.op-discretization")
+LOGGER = logging.getLogger("ikats.algo.discretization")
 # Log format
 LOGGER.setLevel(logging.DEBUG)
 FORMATTER = logging.Formatter('%(asctime)s:%(levelname)s:%(funcName)s:%(message)s')
