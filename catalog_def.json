@@ -9,12 +9,12 @@
     "name": "Discretize",
     "description": "Discretize regular buckets from time series of a dataset",
     "algorithm": "Discretize",
-    "entry_point": "ikats.algo.core.discretization::discretize_dataset",
+    "entry_point": "op-discretization::discretize_dataset",
     "label": "Discretize",
     "inputs": [
       {
         "name": "ds_name",
-        "label": "Dataset Name",
+        "label": "DSname",
         "description": "Name of the dataset to discretize",
         "type": "ds_name"
       }
@@ -44,7 +44,7 @@
     "outputs": [
       {
         "name": "result",
-        "label": "table",
+        "label": "Table",
         "description": "Table containing all discretized values for each bucket",
         "type": "table"
       }
