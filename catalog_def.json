@@ -24,12 +24,7 @@
       "description": "Operators computed for each bucket",
       "type": "list_multiple",
       "label": "List of operators",
-      "domain": [
-        "MIN",
-        "MAX",
-        "AVG",
-        "STD"
-      ],
+      "domain": "['MIN','MAX','AVG','STD']",
       "default_value": "AVG"
     },
     {
