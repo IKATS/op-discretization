@@ -2,7 +2,7 @@
   "name": "discretize",
   "label": "Discretize",
   "description": "Discretize regular buckets from time series of a dataset",
-  "family": "Preprocessing_TS__Reduction",
+  "family": "Preprocessing_TS__Transforming",
   "entry_point": "discretization.discretization::discretize_dataset",
   "inputs": [
     {
