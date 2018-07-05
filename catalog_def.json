@@ -1,53 +1,45 @@
-[
-  {
-    "name": "Discretize",
-    "description": "Discretize regular buckets from time series of a dataset",
-    "label": "Discretize",
-    "family": "Preprocessing_TS__Reduction"
-  },
-  {
-    "name": "Discretize",
-    "description": "Discretize regular buckets from time series of a dataset",
-    "algorithm": "Discretize",
-    "entry_point": "op-discretization::discretize_dataset",
-    "label": "Discretize",
-    "inputs": [
-      {
-        "name": "ds_name",
-        "label": "DSname",
-        "description": "Name of the dataset to discretize",
-        "type": "ds_name"
-      }
-    ],
-    "parameters": [
-      {
-        "name": "nb_buckets",
-        "description": "number of buckets to discretize each timeseries of the dataset",
-        "type": "number",
-        "label": "Number of buckets"
-      },
-      {
-        "name": "operators_list",
-        "description": "Operators computed for each bucket",
-        "type": "list_multiple",
-        "label": "List of operators",
-        "domain": ["MIN","MAX","AVG","STD"],
-        "default_value": "AVG"
-      },
-      {
-        "name": "table_name",
-        "description": "Name of the table to create",
-        "type": "text",
-        "label": "Table name"
-      }
-    ],
-    "outputs": [
-      {
-        "name": "result",
-        "label": "Table",
-        "description": "Table containing all discretized values for each bucket",
-        "type": "table"
-      }
-    ]
-  }
-]
+{
+  "name": "discretize",
+  "label": "Discretize",
+  "description": "Discretize regular buckets from time series of a dataset",
+  "family": "Preprocessing_TS__Transforming",
+  "entry_point": "discretization.discretization::discretize_dataset",
+  "inputs": [
+    {
+      "name": "ds_name",
+      "label": "DSname",
+      "description": "Name of the dataset to discretize",
+      "type": "ds_name"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "nb_buckets",
+      "description": "number of buckets to discretize each timeseries of the dataset",
+      "type": "number",
+      "label": "Number of buckets"
+    },
+    {
+      "name": "operators_list",
+      "description": "Operators computed for each bucket",
+      "type": "list_multiple",
+      "label": "List of operators",
+      "domain": "['MIN','MAX','AVG','STD']",
+      "default_value": "AVG"
+    },
+    {
+      "name": "table_name",
+      "description": "Name of the table to create",
+      "type": "text",
+      "label": "Table name"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "label": "Table",
+      "description": "Table containing all discretized values for each bucket",
+      "type": "table"
+    }
+  ]
+}
