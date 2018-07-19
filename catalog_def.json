@@ -20,18 +20,18 @@
       "label": "Number of buckets"
     },
     {
+      "name": "table_name",
+      "description": "Name of the table to create",
+      "type": "text",
+      "label": "Table name"
+    },
+    {
       "name": "operators_list",
       "description": "Operators computed for each bucket",
       "type": "list_multiple",
       "label": "List of operators",
       "domain": "['MIN','MAX','AVG','STD']",
       "default_value": "AVG"
-    },
-    {
-      "name": "table_name",
-      "description": "Name of the table to create",
-      "type": "text",
-      "label": "Table name"
     }
   ],
   "outputs": [
